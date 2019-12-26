@@ -11,6 +11,6 @@ def getFuel(mass, totalFuel=0):
 
 
 if __name__ == '__main__':
-    with open("./1-1-input.txt", "r") as f:
+    with open("./fuelInput.txt", "r") as f:
         fuels = [getFuel(int(x)) for x in f.readlines()]
         print(sum(fuels))

@@ -1,6 +1,3 @@
-import sys
-
-
 def performOp(program, pointer):
     op = program[pointer]
     if (op == 99):
@@ -22,7 +19,7 @@ def runIntcode(program):
 
 
 if __name__ == '__main__':
-    with open("./2-1-input.txt", "r") as _input:
+    with open("./intcodeInput.txt", "r") as _input:
         intcode = [int(x) for x in _input.readline().split(',')]
         programResult = runIntcode(intcode)
     print(programResult[0])
